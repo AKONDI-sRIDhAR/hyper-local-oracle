@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { MapPin } from "lucide-react";
 import WeatherBackground from "@/components/WeatherBackground";
 import SearchBar from "@/components/SearchBar";
 import WeatherCard from "@/components/WeatherCard";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -63,7 +65,9 @@ const Index = () => {
 
       if (error) throw error;
 
-      if (data.success && data.weather) {
+      console.log("Weather search response:", data);
+
+      if (data.success && data.weather && data.weather.location) {
         const current = data.weather.current;
         const condition = getWeatherCondition(current.weather_code);
         setWeatherCondition(condition);
@@ -81,9 +85,12 @@ const Index = () => {
           description: `Showing weather for ${data.weather.location.name}`,
         });
       } else {
-        throw new Error("Could not find weather data for this location");
+        throw new Error(data.parsed?.location 
+          ? `Could not find weather data for "${data.parsed.location}"` 
+          : "Could not understand your location query. Try 'weather in Tokyo' or 'Delhi weather'");
       }
     } catch (error: any) {
+      console.error("Weather search error:", error);
       toast({
         title: "Search failed",
         description: error.message || "Please try again with a different location",
@@ -92,6 +99,15 @@ const Index = () => {
     } finally {
       setLoading(false);
     }
+  };
+
+  const handleLocationClick = () => {
+    setSearchQuery("");
+    setWeatherData(null);
+    toast({
+      title: "Change location",
+      description: "Enter a new location to search",
+    });
   };
 
   return (
@@ -115,13 +131,28 @@ const Index = () => {
         </motion.div>
 
         {/* Search */}
-        <div className="mb-12">
+        <div className="mb-12 relative">
           <SearchBar
             value={searchQuery}
             onChange={setSearchQuery}
             onSearch={handleSearch}
             loading={loading}
           />
+          {weatherData && (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="absolute -bottom-16 right-0"
+            >
+              <Button
+                onClick={handleLocationClick}
+                size="icon"
+                className="rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-xl border border-white/20 text-white"
+              >
+                <MapPin className="w-5 h-5" />
+              </Button>
+            </motion.div>
+          )}
         </div>
 
         {/* Weather display */}
