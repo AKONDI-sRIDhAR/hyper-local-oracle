@@ -4,6 +4,7 @@ import { MapPin } from "lucide-react";
 import WeatherBackground from "@/components/WeatherBackground";
 import SearchBar from "@/components/SearchBar";
 import WeatherCard from "@/components/WeatherCard";
+import WeatherChart from "@/components/WeatherChart";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
@@ -12,7 +13,10 @@ const Index = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [loading, setLoading] = useState(false);
   const [weatherData, setWeatherData] = useState<any>(null);
+  const [hourlyData, setHourlyData] = useState<any>(null);
+  const [timezone, setTimezone] = useState<string>("");
   const [weatherCondition, setWeatherCondition] = useState<"clear" | "cloudy" | "rainy" | "stormy">("clear");
+  const [isNight, setIsNight] = useState(false);
   const { toast } = useToast();
 
   const getWeatherCondition = (code: number): "clear" | "cloudy" | "rainy" | "stormy" => {
@@ -70,6 +74,12 @@ const Index = () => {
       if (data.success && data.weather && data.weather.location) {
         const current = data.weather.current;
         const condition = getWeatherCondition(current.weather_code);
+        
+        // Determine if it's night (simple check based on current hour)
+        const currentHour = new Date().getHours();
+        const nightTime = currentHour < 6 || currentHour >= 19;
+        setIsNight(nightTime);
+        
         setWeatherCondition(condition);
         setWeatherData({
           location: `${data.weather.location.name}, ${data.weather.location.country}`,
@@ -79,6 +89,12 @@ const Index = () => {
           windSpeed: current.wind_speed_10m,
           feelsLike: current.apparent_temperature,
         });
+        
+        // Store hourly data for chart
+        if (data.weather.hourly) {
+          setHourlyData(data.weather.hourly);
+          setTimezone(data.weather.timezone || data.weather.location.timezone || "");
+        }
 
         toast({
           title: "Weather updated",
@@ -104,6 +120,7 @@ const Index = () => {
   const handleLocationClick = () => {
     setSearchQuery("");
     setWeatherData(null);
+    setHourlyData(null);
     toast({
       title: "Change location",
       description: "Enter a new location to search",
@@ -112,7 +129,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen relative">
-      <WeatherBackground condition={weatherCondition} />
+      <WeatherBackground condition={weatherCondition} isNight={isNight} />
       
       <div className="relative z-10 container mx-auto px-4 py-12">
         {/* Header */}
@@ -157,8 +174,9 @@ const Index = () => {
 
         {/* Weather display */}
         {weatherData && (
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-2xl mx-auto space-y-6">
             <WeatherCard {...weatherData} />
+            {hourlyData && <WeatherChart hourlyData={hourlyData} timezone={timezone} />}
           </div>
         )}
 
