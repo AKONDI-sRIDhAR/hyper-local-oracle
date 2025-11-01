@@ -21,7 +21,40 @@ serve(async (req) => {
 
     console.log('Processing weather query:', query);
 
-    // Use Google Gemini for semantic understanding
+    // Check for airport/railway codes
+    const locationCodes: Record<string, string> = {
+      'DEL': 'Delhi', 'BOM': 'Mumbai', 'MAA': 'Chennai', 'CCU': 'Kolkata',
+      'BLR': 'Bangalore', 'HYD': 'Hyderabad', 'VTZ': 'Visakhapatnam',
+      'VSKP': 'Visakhapatnam', 'NDLS': 'New Delhi', 'NYC': 'New York',
+      'LAX': 'Los Angeles', 'LHR': 'London', 'CDG': 'Paris', 'GOI': 'Goa'
+    };
+
+    // Check for common typos
+    const typoMap: Record<string, string> = {
+      'dilli': 'Delhi', 'delhhi': 'Delhi', 'dehli': 'Delhi',
+      'vizag': 'Visakhapatnam', 'bombay': 'Mumbai',
+      'banglore': 'Bangalore', 'bengaluru': 'Bangalore',
+      'kolkatta': 'Kolkata', 'calcutta': 'Kolkata'
+    };
+
+    let processedQuery = query;
+    const upperQuery = query.toUpperCase().trim();
+    
+    // Check if it's an airport/station code
+    if (locationCodes[upperQuery]) {
+      processedQuery = locationCodes[upperQuery];
+    } else {
+      // Check for typos
+      const lowerQuery = query.toLowerCase().trim();
+      for (const [typo, correct] of Object.entries(typoMap)) {
+        if (lowerQuery.includes(typo)) {
+          processedQuery = processedQuery.replace(new RegExp(typo, 'gi'), correct);
+          break;
+        }
+      }
+    }
+
+    // Use Google Gemini for semantic understanding and personality
     const aiResponse = await fetch(
       `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GOOGLE_API_KEY}`,
       {
@@ -30,18 +63,31 @@ serve(async (req) => {
         body: JSON.stringify({
           contents: [{
             parts: [{
-              text: `Extract location and weather intent from: "${query}". 
-              Return JSON with: {
-                "location": "corrected location name",
+              text: `You are a friendly weather assistant with personality. Analyze: "${processedQuery}"
+              
+              Return JSON with:
+              {
+                "location": "corrected location name (be specific, e.g., 'Buffalo, New York' not just 'Buffalo')",
                 "intent": "current/forecast/details",
                 "timeframe": "now/today/tomorrow/week",
+                "personality_message": "a short, witty, contextual comment about the weather (max 15 words)",
                 "original": "${query}"
               }
-              Handle typos and informal language. If location unclear, return null for location.`
+              
+              Handle semantic understanding:
+              - "beach near goa" → "Goa beaches"
+              - "north delhi university area" → "North Delhi"
+              - Disambiguate: "Buffalo" likely means Buffalo, New York (most populous)
+              
+              Make personality_message engaging based on conditions, like:
+              - Sunny: "Perfect day for sunglasses! ☀️"
+              - Rainy: "Grab your umbrella, it's shower time! 🌧️"
+              - Cold: "Brr! Time for hot cocoa ☕"
+              - Stormy: "Whoa, stay safe inside! ⛈️"`
             }]
           }],
           generationConfig: {
-            temperature: 0.3,
+            temperature: 0.7,
             maxOutputTokens: 500,
             responseMimeType: "application/json"
           }
@@ -94,6 +140,7 @@ serve(async (req) => {
       JSON.stringify({
         parsed: parsedQuery,
         weather: weatherData,
+        personalityMessage: parsedQuery.personality_message || null,
         success: true
       }),
       { 

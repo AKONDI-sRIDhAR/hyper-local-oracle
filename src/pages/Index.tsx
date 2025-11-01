@@ -5,6 +5,7 @@ import WeatherBackground from "@/components/WeatherBackground";
 import SearchBar from "@/components/SearchBar";
 import WeatherCard from "@/components/WeatherCard";
 import WeatherChart from "@/components/WeatherChart";
+import StickmanCharacter from "@/components/StickmanCharacter";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
@@ -17,6 +18,7 @@ const Index = () => {
   const [timezone, setTimezone] = useState<string>("");
   const [weatherCondition, setWeatherCondition] = useState<"clear" | "cloudy" | "rainy" | "stormy">("clear");
   const [isNight, setIsNight] = useState(false);
+  const [stickmanMessage, setStickmanMessage] = useState<string>("");
   const { toast } = useToast();
 
   const getWeatherCondition = (code: number): "clear" | "cloudy" | "rainy" | "stormy" => {
@@ -96,6 +98,11 @@ const Index = () => {
           setTimezone(data.weather.timezone || data.weather.location.timezone || "");
         }
 
+        // Set personality message for stickman
+        if (data.personalityMessage) {
+          setStickmanMessage(data.personalityMessage);
+        }
+
         toast({
           title: "Weather updated",
           description: `Showing weather for ${data.weather.location.name}`,
@@ -130,6 +137,12 @@ const Index = () => {
   return (
     <div className="min-h-screen relative">
       <WeatherBackground condition={weatherCondition} isNight={isNight} />
+      <StickmanCharacter 
+        condition={weatherCondition} 
+        isNight={isNight}
+        temperature={weatherData?.temperature}
+        message={stickmanMessage}
+      />
       
       <div className="relative z-10 container mx-auto px-4 py-12">
         {/* Header */}
