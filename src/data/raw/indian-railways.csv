@@ -1,0 +1,19 @@
+station_code,station_name,station_type,zone,state,latitude,longitude
+ABB,Abada,STOP,SER,West Bengal,22.68,88.02
+ABR,Abu Road,JN,NWR,Rajasthan,24.48,72.78
+ADB,Adilabad,TERM,SCR,Telangana,19.67,78.53
+ADI,Ahmedabad,JN,WR,Gujarat,23.02,72.58
+AGC,Agra Cantt,JN,NCR,Uttar Pradesh,27.18,77.98
+AGT,Agartala,TERM,NFR,Tripura,23.89,91.24
+AII,Ajmer,JN,NWR,Rajasthan,26.45,74.64
+AJNI,Ajni,STOP,SCR,Maharashtra,20.67,79.00
+AK,Adoni,STOP,SCR,Andhra Pradesh,16.07,77.27
+ALD,Allahabad,JN,NCR,Uttar Pradesh,25.45,81.85
+SLO,Samalkot Junction,JN,SCR,Andhra Pradesh,16.85,82.18
+NDLS,New Delhi,TERM,NR,Delhi,28.6139,77.2090
+BCT,Mumbai Central,TERM,WR,Maharashtra,18.9691,72.8194
+MAS,Chennai Central,TERM,SR,Tamil Nadu,13.0827,80.2707
+HWH,Howrah,TERM,ER,West Bengal,22.5845,88.3426
+SBC,Bangalore City,JN,SWR,Karnataka,12.9716,77.5946
+SXR,Srinagar,STOP,NR,Jammu & Kashmir,34.0837,74.7973
+DED,Dehradun,TERM,NR,Uttarakhand,30.3165,78.0322

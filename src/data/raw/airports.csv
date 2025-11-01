@@ -1,0 +1,259 @@
+id,ident,type,name,latitude_deg,longitude_deg,elevation_ft,continent,iso_country,iso_region,municipality,scheduled_service,gps_code,iata_code,local_code,home_link,wikipedia_link,keywords
+6523,00A,heliport,Total RF Heliport,40.07080078125,-74.93360137939453,11,NA,US,US-PA,Bensalem,no,00A,,00A,,,
+323361,00AA,small_airport,Aero B Ranch Airport,38.704022,-101.473911,3435,NA,US,US-KS,Leoti,no,00AA,,00AA,,,
+6524,00AK,small_airport,Lowell Field,59.94919968,-151.695999146,450,NA,US,US-AK,Anchor Point,no,00AK,,00AK,,,
+6525,00AL,small_airport,Epps Airpark,34.8647994995,-86.7703018188,820,NA,US,US-AL,Harvest,no,00AL,,00AL,,,
+6526,00AR,closed,Newport Hospital & Clinic Heliport,35.6087,-91.254898,237,NA,US,US-AR,Newport,no,,,,,"00AR"
+322127,00AS,small_airport,Fulton Airport,34.9428028,-97.8180194,1100,NA,US,US-OK,Alex,no,00AS,,00AS,,,
+6527,00AZ,small_airport,Cordes Airport,34.3055992126,-112.1650009155,3800,NA,US,US-AZ,Cordes,no,00AZ,,00AZ,,,
+6528,00CA,small_airport,Goldstone /Gts/ Airport,35.35474,-116.888379,3036,NA,US,US-CA,Barstow,no,00CA,,00CA,,,
+324424,00CL,small_airport,Williams Ag Airport,39.427186,-121.763427,87,NA,US,US-CA,Biggs,no,00CL,,00CL,,,
+6529,00CO,closed,Cass Field,40.6222000122,-104.34400177,4830,NA,US,US-CO,Briggsdale,no,,,,,"00CO"
+6530,00CS,small_airport,Zephyrhills Municipal Airport,28.22800064086914,-82.15570068359375,89,NA,US,US-FL,Zephyrhills,yes,KZPH,ZPH,ZPH,http://www.ci.zephyrhills.fl.us/Departments/Airport.aspx,https://en.wikipedia.org/wiki/Zephyrhills_Municipal_Airport,
+6531,00FA,small_airport,Grass Patch Airport,28.64550018310547,-82.21900177001953,53,NA,US,US-FL,Bushnell,no,00FA,,00FA,,,
+6532,00FD,heliport,Ringhaver Heliport,28.846599578857422,-82.34539794921875,25,NA,US,US-FL,Ocala,no,00FD,,00FD,,,
+6533,00FL,small_airport,River Oak Airport,27.230899810791016,-80.9691999,35,NA,US,US-FL,Okeechobee,no,00FL,,00FL,,,
+6534,00GA,small_airport,Lt World Airport,33.4223007,-84.4699991,960,NA,US,US-GA,Hampton,no,00GA,,00GA,,,
+6535,00GE,heliport,J P Journals Heliport,34.949899,-85.247299,700,NA,US,US-GA,Ringgold,no,00GE,,00GE,,,
+6536,00HI,heliport,Kaupulehu Heliport,19.832718,-155.961547,43,NA,US,US-HI,Kailua/Kona,no,00HI,,00HI,,,
+6537,00ID,small_airport,Delta Shores Airport,48.145301818847656,-116.48800659179688,2064,NA,US,US-ID,Clark Fork,no,00ID,,00ID,,,
+6538,00IG,small_airport,Goltl Airport,39.6372008,-101.4080004,3373,NA,US,US-KS,McDonald,no,00IG,,00IG,,,
+6539,00IL,small_airport,Hammer Airport,40.1 Hammer Rd, -89.625892,540,NA,US,US-IL,Lincoln,no,00IL,,00IL,,,
+6540,00IN,heliport,St Mary Medical Center Heliport,41.5806,-87.4264,634,NA,US,US-IN,Hobart,no,00IN,,00IN,,,
+6541,00IS,small_airport,Hayenga's Airport,40. Hayenga's Ln, -89.1239,820,NA,US,US-IL,Strawn,no,00IS,,00IS,,,
+6542,00KS,small_airport,Hayden Farm Airport,38.7249984741,-94.75050354,1030,NA,US,US-KS,Bucyrus,no,00KS,,00KS,,,
+6543,00KY,small_airport,Robbins Roost Airport,37.343697,-83.717697,1285,NA,US,US-KY,Mc Kee,no,00KY,,00KY,,,
+6544,00LA,heliport,Shell Chemical East Site Heliport,30.191944,-90.980833,15,NA,US,US-LA,Gonzales,no,00LA,,00LA,,,
+6545,00LL,heliport,Ac & R Components Heliport,39.66529846191406,-89.70569610595703,600,NA,US,US-IL,Chatham,no,00LL,,00LL,,,
+6546,00LS,small_airport,Lejeune Airport,30.133299,-92.429402,12,NA,US,US-LA,Esterwood,no,00LS,,00LS,,,
+6547,00MA,small_airport,Bucks Airport,42.346700,-71.9 Bucks Airport,850,NA,US,US-MA,Barre,no,00MA,,00MA,,,
+6548,00MD,small_airport,Slater Field,38.75709915161133,-75.75379943847656,65,NA,US,US-MD,Federalsburg,no,00MD,,00MD,,,
+6549,00ME,heliport,Best View Heliport,44.292999267578125,-70.033203125,550,NA,US,US-ME,Buckfield,no,00ME,,00ME,,,
+6550,00MI,heliport,Dow Chemical Company Heliport,43.6293983459,-84.2 Dow Chemical Company Heliport,630,NA,US,US-MI,Midland,no,00MI,,00MI,,,
+6551,00MN,small_airport,Battle Lake Municipal Airport,46.29999923706055,-95.70899963378906,13 Battle Lake Municipal Airport,NA,US,US-MN,Battle Lake,no,00MN,L44,00MN,,,
+6552,00MO,small_airport,Foster's Landing Airport,38.64999,-90.90999,440,NA,US,US-MO,Washington,no,00MO,,00MO,,,
+6553,00MS,small_airport,Tishomingo County Airport,34.643200,-88.214203,520,NA,US,US-MS,Belmont,no,00MS,,00MS,,,
+6554,00MT,small_airport,Sager Airport,46.467794,-105.74413,2600,NA,US,US-MT,Miles City,no,00MT,,00MT,,,
+6555,00N,heliport,Eagle Nest Heliport,40.1232,-74.0841,12,NA,US,US-NJ,Wall Township,no,00N,,00N,,,
+6556,00NC,heliport,Weathers Heliport,35.61360168457031,-81.56490325927734,1300,NA,US,US-NC,Hickory,no,00NC,,00NC,,,
+6557,00ND,small_airport,Nelson Airport,48.625301361083984,-98.08719635009766,1480,NA,US,US-ND,Edmore,no,00ND,,00ND,,,
+6558,00NE,small_airport,Private Rdg Airport,41.288299560546875,-96.79070281982422,1300,NA,US,US-NE,Ceresco,no,00NE,,00NE,,,
+6559,00NJ,heliport,Colgate-Palmolive Heliport,40.716301,-74.037697,10,NA,US,US-NJ,Jersey City,no,00NJ,,00NJ,,,
+6560,00NK,heliport,Kimball Medical Center,40.0984001159668,-74.22150421142578,11,NA,US,US-NJ,Lakewood,no,00NK,,00NK,,,
+6561,00NM,small_airport,Circle S Airport,32.3 Circle S Airport, -103. Circle S Airport,3 Circle S Airport,NA,US,US-NM,Hobbs,no,00NM,,00NM,,,
+6562,00NV,small_airport,Holley Field,39.366600036621094,-119.53300476074219,4550,NA,US,US-NV,Dayton,no,00NV,,00NV,,,
+6563,00NY,heliport,St Josephs Hospital,43.2039,-75.419403,500,NA,US,US-NY,Boonville,no,00NY,,00NY,,,
+6564,00OA,heliport,Eagles View Heliport,42.8734016418457,-73.81189727783203,710,NA,US,US-NY,Mechanicville,no,00OA,,00OA,,,
+6565,00OH,small_airport,Aero Estates Airport,40.260902,-84.072502,1040,NA,US,US-OH,Piqua,no,00OH,,00OH,,,
+6566,00OI,heliport,Ohio County Hospital Heliport,37.7842,-87.142502,460,NA,US,US-KY,Hartford,no,00OI,,00OI,,,
+6567,00OK,small_airport,Gull Bay Airport,34.4233,-98.397501,1110,NA,US,US-OK,Faxon,no,00OK,,00OK,,,
+6568,00OR,small_airport,Shoestring Airport,44.9 Shoestring Airport, -122. Shoestring Airport,2 Shoestring Airport,NA,US,US-OR,Damascus,no,00OR,,00OR,,,
+6569,00PA,heliport,Geisinger Medical Center Heliport,40.999699,-76.851204,950,NA,US,US-PA,Danville,no,00PA,,00PA,,,
+6570,00PN,heliport,N P T Heliport,40.090301513671875,-78.96209716796875,2240,NA,US,US-PA,Hooversville,no,00PN,,00PN,,,
+6571,00PP,heliport,P P L Heliport,41.2407,-75.869797,550,NA,US,US-PA,Wilkes Barre,no,00PP,,00PP,,,
+6572,00PS,small_airport,Indian Creek Airpark,38.8927,-95. Indian Creek Airpark,1 Indian Creek Airpark,NA,US,US-KS,Overbrook,no,00PS,,00PS,,,
+6573,00PY,heliport,Pennridge Hospital Heliport,40.37059,-75.308,485,NA,US,US-PA,Perkasie,no,00PY,,00PY,,,
+6574,00RA,small_airport,Crawford Airport,36.561501,-82.021202,1920,NA,US,US-VA,Damascus,no,00RA,,00RA,,,
+6575,00RI,heliport,Kent County Memorial Hospital,41.714496,-71.442609,41,NA,US,US-RI,Warwick,no,00RI,,00RI,,,
+6576,00SC,small_airport,Mc Coll Airport,34.693401,-79.554001,170,NA,US,US-SC,McColl,no,00SC,,00SC,,,
+6577,00SD,heliport,Sanford USD Medical Center,43.532398,-96.744102,1520,NA,US,US-SD,Sioux Falls,no,00SD,,00SD,,,
+6578,00SN,heliport,St Tammany Parish Hospital Heliport,30.4905,-90.119499,40,NA,US,US-LA,Covington,no,00SN,,00SN,,,
+6579,00TA,small_airport,Crestview Airport,33. Crestview Airport, -96. Crestview Airport,6 Crestview Airport,NA,US,US-TX,McKinney,no,00TA,,00TA,,,
+6580,00TE,heliport,Texas Dept of Public Safety Heliport,30.292999,-97.712196,640,NA,US,US-TX,Austin,no,00TE,,00TE,,,
+6581,00TS,small_airport,Flying T Airfield,32.33320,-97.23072,700,NA,US,US-TX,Rio Vista,no,00TS,,00TS,,,
+6582,00TX,small_airport,San Angelo Medical Center,31.439444,-100.476111,1920,NA,US,US-TX,San Angelo,no,00TX,,00TX,,,
+6583,00UT,small_airport,Castle Valley Airport,38. Castle Valley Airport, -109. Castle Valley Airport,4 Castle Valley Airport,NA,US,US-UT,Moab,no,00UT,,00UT,,,
+6584,00VA,heliport,Sentara Leigh Hospital Heliport,36.85309982299805,-76.1895980834961,31,NA,US,US-VA,Norfolk,no,00VA,,00VA,,,
+6585,00VE,small_airport,Calvert Airstrip,37.6033,-76.716698,50,NA,US,US-VA,Walkerton,no,00VE,,00VE,,,
+6586,00VT,heliport,Porter Medical Center Heliport,44.037139,-73.181373,340,NA,US,US-VT,Middlebury,no,00VT,,00VT,,,
+6587,00WA,heliport,Key Peninsula Fire Dept. #13,47.2 Key Peninsula Fire Dept. #13, -122. Key Peninsula Fire Dept. #13,2 Key Peninsula Fire Dept. #13,NA,US,US-WA,Key Center,no,00WA,,00WA,,,
+6588,00WI,small_airport,Luedtke's Airport,44. Luedtke's Airport, -91. Luedtke's Airport,8 Luedtke's Airport,NA,US,US-WI,Augusta,no,00WI,,00WI,,,
+6589,00Wl,small_airport,Whisper Creek Airport,43. Whisper Creek Airport, -110. Whisper Creek Airport,7 Whisper Creek Airport,NA,US,US-WY,Wilson,no,00Wl,,00Wl,,,
+6590,00WN,heliport,Tacoma General Hospital Heliport,47.251,-122.451004,360,NA,US,US-WA,Tacoma,no,00WN,,00WN,,,
+6591,00WV,small_airport,Beckley Hospital Heliport,37. Beckley Hospital Heliport, -81. Beckley Hospital Heliport,2 Beckley Hospital Heliport,NA,US,US-WV,Beckley,no,00WV,,00WV,,,
+6592,00WY,small_airport,Airway Park,42. Airway Park, -104. Airway Park,5 Airway Park,NA,US,US-WY,Cheyenne,no,00WY,,00WY,,,
+6593,01A,heliport,Johnson Tract,32. Johnson Tract, -86. Johnson Tract,2 Johnson Tract,NA,US,US-AL,Elmore,no,01A,,01A,,,
+6594,01AK,small_airport,Uliastai Airport,60. Uliastai Airport, -159. Uliastai Airport,1 Uliastai Airport,NA,US,US-AK,Uliastai,no,01AK,,01AK,,,
+6595,01AL,heliport,Marble Hill Heliport,34. Marble Hill Heliport, -86. Marble Hill Heliport,8 Marble Hill Heliport,NA,US,US-AL,Oneonta,no,01AL,,01AL,,,
+6596,01AR,heliport,Bai Heliport,34. Bai Heliport, -92. Bai Heliport,2 Bai Heliport,NA,US,US-AR,Little Rock,no,01AR,,01AR,,,
+6597,01AZ,small_airport,Flying U Ranch Airport,35. Flying U Ranch Airport, -114. Flying U Ranch Airport,3 Flying U Ranch Airport,NA,US,US-AZ,Wikieup,no,01AZ,,01AZ,,,
+6598,01CA,heliport,Pacific Gas & Electric Co. Heliport,37. Pacific Gas & Electric Co. Heliport, -122. Pacific Gas & Electric Co. Heliport,1 Pacific Gas & Electric Co. Heliport,NA,US,US-CA,San Francisco,no,01CA,,01CA,,,
+6599,01CL,small_airport,Serpas Brothers Airport,37. Serpas Brothers Airport, -121. Serpas Brothers Airport,4 Serpas Brothers Airport,NA,US,US-CA,Pleasanton,no,01CL,,01CL,,,
+6600,01CO,small_airport,Glenwood Springs Municipal Airport,39. Glenwood Springs Municipal Airport, -107. Glenwood Springs Municipal Airport,5 Glenwood Springs Municipal Airport,NA,US,US-CO,Glenwood Springs,yes,KGWS,GWS,GWS,,https://en.wikipedia.org/wiki/Glenwood_Springs_Municipal_Airport,
+6601,01CT,heliport,Sikorsky Heliport,41. Sikorsky Heliport, -73. Sikorsky Heliport,Sikorsky Heliport,NA,US,US-CT,Stratford,no,01CT,,01CT,,,
+6602,01FL,heliport,Florida Hospital-Fish Memorial Heliport,28. Florida Hospital-Fish Memorial Heliport, -81. Florida Hospital-Fish Memorial Heliport,3 Florida Hospital-Fish Memorial Heliport,NA,US,US-FL,Orange City,no,01FL,,01FL,,,
+6603,01GA,heliport,Medical Center of Central Georgia Heliport,32. Medical Center of Central Georgia Heliport, -83. Medical Center of Central Georgia Heliport,3 Medical Center of Central Georgia Heliport,NA,US,US-GA,Macon,no,01GA,,01GA,,,
+6604,01ID,heliport,Simplot Heliport,43. Simplot Heliport, -116. Simplot Heliport,2 Simplot Heliport,NA,US,US-ID,Boise,no,01ID,,01ID,,,
+6605,01IL,heliport,Central Dupage Hospital Heliport,41. Central Dupage Hospital Heliport, -88. Central Dupage Hospital Heliport,7 Central Dupage Hospital Heliport,NA,US,US-IL,Winfield,no,01IL,,01IL,,,
+6606,01IN,heliport,St Vincent Hospital Heliport,39. St Vincent Hospital Heliport, -86. St Vincent Hospital Heliport,8 St Vincent Hospital Heliport,NA,US,US-IN,Indianapolis,no,01IN,,01IN,,,
+6607,01KS,heliport,Wesley Medical Center,37. Wesley Medical Center, -97. Wesley Medical Center,1 Wesley Medical Center,NA,US,US-KS,Wichita,no,01KS,,01KS,,,
+6608,01KY,heliport,Jewish Hospital Heliport,38. Jewish Hospital Heliport, -85. Jewish Hospital Heliport,5 Jewish Hospital Heliport,NA,US,US-KY,Louisville,no,01KY,,01KY,,,
+6609,01LA,heliport,Central Louisiana State Hospital Heliport,31. Central Louisiana State Hospital Heliport, -92. Central Louisiana State Hospital Heliport,9 Central Louisiana State Hospital Heliport,NA,US,US-LA,Pineville,no,01LA,,01LA,,,
+6610,01LL,small_airport,Lanse Airpark,40. Lanse Airpark, -78. Lanse Airpark,1 Lanse Airpark,NA,US,US-PA,Lanse,no,01LL,,01LL,,,
+6611,01LS,small_airport,Letson Farm Airport,33. Letson Farm Airport, -87. Letson Farm Airport,3 Letson Farm Airport,NA,US,US-AL,Berry,no,01LS,,01LS,,,
+6612,01MA,heliport,Massachusetts General Hospital Heliport,42. Massachusetts General Hospital Heliport, -71. Massachusetts General Hospital Heliport,1 Massachusetts General Hospital Heliport,NA,US,US-MA,Boston,no,01MA,MA83,01MA,,,
+6613,01MD,heliport,Greater Baltimore Medical Center Heliport,39. Greater Baltimore Medical Center Heliport, -76. Greater Baltimore Medical Center Heliport,4 Greater Baltimore Medical Center Heliport,NA,US,US-MD,Towson,no,01MD,,01MD,,,
+6614,01ME,heliport,Maine Medical Center Heliport,43. Maine Medical Center Heliport, -70. Maine Medical Center Heliport,9 Maine Medical Center Heliport,NA,US,US-ME,Portland,no,01ME,,01ME,,,
+6615,01MI,small_airport,Le Bar Airport,42. Le Bar Airport, -83. Le Bar Airport,6 Le Bar Airport,NA,US,US-MI,New Boston,no,01MI,,01MI,,,
+6616,01MN,small_airport,Lindstrom Airport,45. Lindstrom Airport, -92. Lindstrom Airport,9 Lindstrom Airport,NA,US,US-MN,Lindstrom,no,01MN,,01MN,,,
+6617,01MO,heliport,St John's Hospital Heliport,37. St John's Hospital Heliport, -93. St John's Hospital Heliport,1 St John's Hospital Heliport,NA,US,US-MO,Springfield,no,01MO,,01MO,,,
+6618,01MS,heliport,Mississippi Baptist Medical Center Heliport,32. Mississippi Baptist Medical Center Heliport, -90. Mississippi Baptist Medical Center Heliport,3 Mississippi Baptist Medical Center Heliport,NA,US,US-MS,Jackson,no,01MS,,01MS,,,
+6619,01MT,small_airport,Cow Creek Airport,47. Cow Creek Airport, -107. Cow Creek Airport,2 Cow Creek Airport,NA,US,US-MT,Zortman,no,01MT,,01MT,,,
+6620,01N,heliport,Trump National Golf Club Heliport,40. Trump National Golf Club Heliport, -74. Trump National Golf Club Heliport,1 Trump National Golf Club Heliport,NA,US,US-NJ,Colts Neck,no,01N,,01N,,,
+6621,01NC,heliport,Pitt County Memorial Hospital Heliport,35. Pitt County Memorial Hospital Heliport, -77. Pitt County Memorial Hospital Heliport,8 Pitt County Memorial Hospital Heliport,NA,US,US-NC,Greenville,no,01NC,,01NC,,,
+6622,01NE,heliport,The Nebraska Medical Center,41. The Nebraska Medical Center, -95. The Nebraska Medical Center,1 The Nebraska Medical Center,NA,US,US-NE,Omaha,no,01NE,,01NE,,,
+6623,01NJ,heliport,Atlantic City Medical Center Heliport,39. Atlantic City Medical Center Heliport, -74. Atlantic City Medical Center Heliport,1 Atlantic City Medical Center Heliport,NA,US,US-NJ,Atlantic City,no,01NJ,,01NJ,,,
+6624,01NK,small_airport,Old Rhinebeck Airport,41. Old Rhinebeck Airport, -73. Old Rhinebeck Airport,1 Old Rhinebeck Airport,NA,US,US-NY,Red Hook,no,01NK,NY94,01NK,http://www.oldrhinebeck.org/,https://en.wikipedia.org/wiki/Old_Rhinebeck_Aerodrome,
+6625,01NY,small_airport,Stolport,42. Stolport, -74. Stolport,9 Stolport,NA,US,US-NY,Prattsville,no,01NY,,01NY,,,
+6626,01OH,small_airport,L P G Airport,41. L P G Airport, -83. L P G Airport,7 L P G Airport,NA,US,US-OH,Swanton,no,01OH,,01OH,,,
+6627,01OK,heliport,St John Medical Center Heliport,36. St John Medical Center Heliport, -95. St John Medical Center Heliport,7 St John Medical Center Heliport,NA,US,US-OK,Tulsa,no,01OK,,01OK,,,
+6628,01OR,heliport,Emanuel Hospital Heliport,45. Emanuel Hospital Heliport, -122. Emanuel Hospital Heliport,1 Emanuel Hospital Heliport,NA,US,US-OR,Portland,no,01OR,,01OR,,,
+6629,01PA,heliport,West Penn Hospital Heliport,40. West Penn Hospital Heliport, -79. West Penn Hospital Heliport,1 West Penn Hospital Heliport,NA,US,US-PA,Pittsburgh,no,01PA,,01PA,,,
+6630,01PN,heliport,Hanover General Hospital Heliport,39. Hanover General Hospital Heliport, -76. Hanover General Hospital Heliport,6 Hanover General Hospital Heliport,NA,US,US-PA,Hanover,no,01PN,,01PN,,,
+6631,01PS,heliport,Pocono Medical Center - East Stroudsburg,41. Pocono Medical Center - East Stroudsburg, -75. Pocono Medical Center - East Stroudsburg,4 Pocono Medical Center - East Stroudsburg,NA,US,US-PA,East Stroudsburg,no,01PS,,01PS,,,
+6632,01PY,heliport,Philmont Heliport,40. Philmont Heliport, -75. Philmont Heliport,3 Philmont Heliport,NA,US,US-PA,Philadelphia,no,01PY,,01PY,,,
+6633,01SC,heliport,Anderson Area Medical Center Heliport,34. Anderson Area Medical Center Heliport, -82. Anderson Area Medical Center Heliport,8 Anderson Area Medical Center Heliport,NA,US,US-SC,Anderson,no,01SC,,01SC,,,
+6634,01TE,heliport,N Texas Medical Center Heliport,33. N Texas Medical Center Heliport, -97. N Texas Medical Center Heliport,7 N Texas Medical Center Heliport,NA,US,US-TX,Gainesville,no,01TE,,01TE,,,
+6635,01TS,small_airport,Air Park North,32. Air Park North, -96. Air Park North,4 Air Park North,NA,US,US-TX,Dallas,no,01TS,,01TS,,,
+6636,01TX,heliport,Christus-St Joseph Hospital Heliport,30. Christus-St Joseph Hospital Heliport, -97. Christus-St Joseph Hospital Heliport,4 Christus-St Joseph Hospital Heliport,NA,US,US-TX,Houston,no,01TX,,01TX,,,
+6637,01VA,heliport,Mary Washington Hospital Heliport,38. Mary Washington Hospital Heliport, -77. Mary Washington Hospital Heliport,2 Mary Washington Hospital Heliport,NA,US,US-VA,Fredericksburg,no,01VA,,01VA,,,
+6638,01WA,heliport,Tacoma Narrows Heliport,47. Tacoma Narrows Heliport, -122. Tacoma Narrows Heliport,1 Tacoma Narrows Heliport,NA,US,US-WA,Gig Harbor,no,01WA,,01WA,,,
+6639,01WI,heliport,St Joseph's Hospital Heliport,44. St Joseph's Hospital Heliport, -90. St Joseph's Hospital Heliport,1 St Joseph's Hospital Heliport,NA,US,US-WI,Marshfield,no,01WI,,01WI,,,
+6640,01WV,heliport,United Hospital Center Heliport,39. United Hospital Center Heliport, -80. United Hospital Center Heliport,1 United Hospital Center Heliport,NA,US,US-WV,Clarksburg,no,01WV,,01WV,,,
+6641,02A,small_airport,Mooselookmeguntic Lake Seaplane Base,44. Mooselookmeguntic Lake Seaplane Base, -70. Mooselookmeguntic Lake Seaplane Base,1 Mooselookmeguntic Lake Seaplane Base,NA,US,US-ME,Mooselookmeguntic Lake,no,02A,,02A,,,
+6642,02AK,small_airport,Tail Spin Airport,61. Tail Spin Airport, -149. Tail Spin Airport,2 Tail Spin Airport,NA,US,US-AK,Wasilla,no,02AK,,02AK,,,
+6643,02AL,small_airport,Reids Personal Airport,31. Reids Personal Airport, -86. Reids Personal Airport,2 Reids Personal Airport,NA,US,US-AL,Andalusia,no,02AL,,02AL,,,
+6644,02AR,heliport,Drew Memorial Hospital Heliport,33. Drew Memorial Hospital Heliport, -91. Drew Memorial Hospital Heliport,1 Drew Memorial Hospital Heliport,NA,US,US-AR,Monticello,no,02AR,,02AR,,,
+6645,02AZ,small_airport,Double Circle Ranch Airport,33. Double Circle Ranch Airport, -109. Double Circle Ranch Airport,6 Double Circle Ranch Airport,NA,US,US-AZ,Clifton,no,02AZ,,02AZ,,,
+6646,02CA,small_airport,Lida Junction Airport,37. Lida Junction Airport, -117. Lida Junction Airport,4 Lida Junction Airport,NA,US,US-NV,Lida Junction,no,02CA,,02CA,,,
+6647,02CL,heliport,Clougherty Packing Company Heliport,34. Clougherty Packing Company Heliport, -118. Clougherty Packing Company Heliport,1 Clougherty Packing Company Heliport,NA,US,US-CA,Los Angeles,no,02CL,,02CL,,,
+6648,02CO,heliport,St Anthony Hospital Heliport,39. St Anthony Hospital Heliport, -104. St Anthony Hospital Heliport,5 St Anthony Hospital Heliport,NA,US,US-CO,Denver,no,02CO,,02CO,,,
+6649,02CS,small_airport,Showers Field,28. Showers Field, -82. Showers Field,7 Showers Field,NA,US,US-FL,Clearwater,no,02CS,,02CS,,,
+6650,02FA,heliport,Florida Medical Center Heliport,26. Florida Medical Center Heliport, -80. Florida Medical Center Heliport,1 Florida Medical Center Heliport,NA,US,US-FL,Fort Lauderdale,no,02FA,,02FA,,,
+6651,02FD,heliport,Halifax Medical Center Heliport,29. Halifax Medical Center Heliport, -81. Halifax Medical Center Heliport,1 Halifax Medical Center Heliport,NA,US,US-FL,Daytona Beach,no,02FD,,02FD,,,
+6652,02GA,heliport,King Heliport,33. King Heliport, -84. King Heliport,8 King Heliport,NA,US,US-GA,Jonesboro,no,02GA,,02GA,,,
+6653,02ID,heliport,St Alphonsus Medical Center Heliport,43. St Alphonsus Medical Center Heliport, -116. St Alphonsus Medical Center Heliport,2 St Alphonsus Medical Center Heliport,NA,US,US-ID,Boise,no,02ID,,02ID,,,
+6654,02IL,small_airport,Cleland Airport,41. Cleland Airport, -89. Cleland Airport,6 Cleland Airport,NA,US,US-IL,Capron,no,02IL,,02IL,,,
+6655,02IN,small_airport,A N K Airport,41. A N K Airport, -86. A N K Airport,7 A N K Airport,NA,US,US-IN,North Judson,no,02IN,,02IN,,,
+6656,02KS,heliport,Leavenworth VA Medical Center Heliport,39. Leavenworth VA Medical Center Heliport, -94. Leavenworth VA Medical Center Heliport,8 Leavenworth VA Medical Center Heliport,NA,US,US-KS,Leavenworth,no,02KS,,02KS,,,
+6657,02KY,small_airport,Reds Airport,37. Reds Airport, -84. Reds Airport,9 Reds Airport,NA,US,US-KY,Moreland,no,02KY,,02KY,,,
+6658,02LA,heliport,Woman's Hospital Heliport,30. Woman's Hospital Heliport, -91. Woman's Hospital Heliport,5 Woman's Hospital Heliport,NA,US,US-LA,Baton Rouge,no,02LA,,02LA,,,
+6659,02LL,heliport,Bell Helicopter-Piney Flats Heliport,36. Bell Helicopter-Piney Flats Heliport, -82. Bell Helicopter-Piney Flats Heliport,1 Bell Helicopter-Piney Flats Heliport,NA,US,US-TN,Piney Flats,no,02LL,TN30,02LL,,,
+6660,02LS,small_airport,Madden Field,34. Madden Field, -87. Madden Field,5 Madden Field,NA,US,US-AL,Double Springs,no,02LS,,02LS,,,
+6661,02MD,heliport,Harford Memorial Hospital Heliport,39. Harford Memorial Hospital Heliport, -76. Harford Memorial Hospital Heliport,1 Harford Memorial Hospital Heliport,NA,US,US-MD,Havre De Grace,no,02MD,,02MD,,,
+6662,02MI,heliport,Sparrow Hospital Heliport,42. Sparrow Hospital Heliport, -84. Sparrow Hospital Heliport,8 Sparrow Hospital Heliport,NA,US,US-MI,Lansing,no,02MI,,02MI,,,
+6663,02MN,small_airport,Gopher Airport,44. Gopher Airport, -92. Gopher Airport,1 Gopher Airport,NA,US,US-MN,St Paul,no,02MN,,02MN,,,
+6664,02MO,small_airport,Jacks Fork Airport,37. Jacks Fork Airport, -91. Jacks Fork Airport,9 Jacks Fork Airport,NA,US,US-MO,Eminence,no,02MO,,02MO,,,
+6665,02MS,heliport,Southwest Mississippi Regional Medical Center,31. Southwest Mississippi Regional Medical Center, -90. Southwest Mississippi Regional Medical Center,4 Southwest Mississippi Regional Medical Center,NA,US,US-MS,McComb,no,02MS,,02MS,,,
+6666,02MT,small_airport,Tnt Airport,48. Tnt Airport, -107. Tnt Airport,3 Tnt Airport,NA,US,US-MT,Malta,no,02MT,,02MT,,,
+6667,02N,heliport,Schering Plough,40. Schering Plough, -74. Schering Plough,1 Schering Plough,NA,US,US-NJ,Kenilworth,no,02N,,02N,,,
+6668,02NC,heliport,Mission Hospitals Heliport,35. Mission Hospitals Heliport, -82. Mission Hospitals Heliport,2 Mission Hospitals Heliport,NA,US,US-NC,Asheville,no,02NC,,02NC,,,
+6669,02NE,heliport,Offutt Afb Heliport,41. Offutt Afb Heliport, -95. Offutt Afb Heliport,1 Offutt Afb Heliport,NA,US,US-NE,Omaha,no,02NE,,02NE,,,
+6670,02NK,small_airport,Little Falls Airport,43. Little Falls Airport, -74. Little Falls Airport,8 Little Falls Airport,NA,US,US-NY,Little Falls,no,02NK,,02NK,,,
+6671,02NY,small_airport,Burdick's Airport,42. Burdick's Airport, -74. Burdick's Airport,1 Burdick's Airport,NA,US,US-NY,Catskill,no,02NY,,02NY,,,
+6672,02OH,heliport,St Vincent Mercy Medical Center Heliport,41. St Vincent Mercy Medical Center Heliport, -83. St Vincent Mercy Medical Center Heliport,6 St Vincent Mercy Medical Center Heliport,NA,US,US-OH,Toledo,no,02OH,,02OH,,,
+6673,02OK,small_airport,Attebury Field,35. Attebury Field, -97. Attebury Field,1 Attebury Field,NA,US,US-OK,Tuttle,no,02OK,,02OK,,,
+6674,02OR,heliport,St Charles Medical Center Heliport,44. St Charles Medical Center Heliport, -121. St Charles Medical Center Heliport,3 St Charles Medical Center Heliport,NA,US,US-OR,Bend,no,02OR,,02OR,,,
+6675,02PA,heliport,Allegheny General Hospital Heliport,40. Allegheny General Hospital Heliport, -80. Allegheny General Hospital Heliport,1 Allegheny General Hospital Heliport,NA,US,US-PA,Pittsburgh,no,02PA,,02PA,,,
+6676,02PN,heliport,York Hospital Heliport,39. York Hospital Heliport, -76. York Hospital Heliport,4 York Hospital Heliport,NA,US,US-PA,York,no,02PN,,02PN,,,
+6677,02PR,heliport,Mayaguez Medical Center Heliport,18. Mayaguez Medical Center Heliport, -67. Mayaguez Medical Center Heliport,1 Mayaguez Medical Center Heliport,NA,PR,PR-U-A,Mayaguez,no,02PR,,02PR,,,
+6LAG,VILG,"Leh Kushok Bakula Rimpochee Airport",Leh,IN,34.13580,77.54650
+IXA,VEAT,"Agartala Airport",Agartala,IN,23.88690,91.24050
+AGR,VIAG,"Agra Airport",Agra,IN,27.15760,77.96100
+AMD,VAAH,"Ahmedabad Airport",Ahmedabad,IN,23.07340,72.62660
+AJL,VEAZ,"Aizawl Airport",Aizawl,IN,23.74330,92.61980
+ATQ,VIAR,"Amritsar Airport",Amritsar,IN,31.70610,74.79940
+IXB,VEBD,"Bagdogra Airport",Bagdogra,IN,26.68120,88.32860
+IXL,VILH,"Bakula Airport",Leh,IN,34.13580,77.54650
+BLR,VOBG,"Bengaluru International Airport",Bangalore,IN,13.19790,77.70630
+BEK,VOBX,"Bareilly Airport",Bareilly,IN,28.42390,79.44750
+BUP,VIBT,"Bhatinda Airport",Bhatinda,IN,29.35830,75.05080
+BHU,VABV,"Bhavnagar Airport",Bhavnagar,IN,21.75220,72.18560
+BHO,VABP,"Bhopal Airport",Bhopal,IN,23.28750,77.33720
+BBI,VEBS,"Bhubaneswar Airport",Bhubaneswar,IN,20.24440,85.81780
+BHJ,VABJ,"Bhuj Airport",Bhuj,IN,23.28780,69.67020
+BEP,VOBI,"Bellary Airport",Bellary,IN,15.15830,76.88330
+BOM,VABB,"Chhatrapati Shivaji International Airport",Mumbai,IN,19.08870,72.86790
+CCU,VECC,"Netaji Subhash Chandra Bose International Airport",Kolkata,IN,22.65470,88.44670
+CJB,VOCB,"Coimbatore International Airport",Coimbatore,IN,11.03000,77.04330
+COK,VOCI,"Cochin International Airport",Kochi,IN,10.15200,76.40190
+CCJ,VOCL,"Calicut International Airport",Kozhikode,IN,11.13690,75.95510
+CBD,VECX,"Car Nicobar Air Force Base",Car Nicobar,IN,9.15780,92.81830
+DED,VIDN,"Dehradun Airport",Dehradun,IN,30.18970,78.18030
+DEP,VEDZ,"Deparizo Airport",Deparizo,IN,27.98330,94.21670
+DEL,VIDP,"Indira Gandhi International Airport",Delhi,IN,28.56650,77.10310
+DHM,VIGG,"Gaggal Airport",Dharamsala,IN,32.16510,76.26310
+DIB,VEMN,"Dibrugarh Airport",Dibrugarh,IN,27.48390,95.01560
+DMU,VEMR,"Dimapur Airport",Dimapur,IN,25.88330,93.76670
+DIU,VA1P,"Diu Airport",Diu,IN,20.71310,70.92110
+GAY,VEGY,"Gaya Airport",Gaya,IN,24.74420,84.95110
+GOI,VAGO,"Goa International Airport",Goa,IN,15.38080,73.83140
+GAU,VEGT,"Lokpriya Gopinath Bordoloi International Airport",Guwahati,IN,26.10610,91.58580
+GWL,VIGR,"Gwalior Airport",Gwalior,IN,26.29330,78.22780
+HSS,VIHS,"Hissar Airport",Hissar,IN,29.17500,75.75830
+HBX,VAHB,"Hubli Airport",Hubli,IN,15.36190,75.08490
+HYD,VOBR,"Hyderabad Begumpet Airport",Hyderabad,IN,17.45280,78.46830
+IDR,VAID,"Indore Airport",Indore,IN,22.72220,75.80110
+IMF,VEIM,"Imphal Airport",Imphal,IN,24.76000,93.89670
+JAI,VIJP,"Jaipur Airport",Jaipur,IN,26.82420,75.81220
+JLR,VAJR,"Jabalpur Airport",Jabalpur,IN,23.17750,80.05220
+JGA,VAJM,"Jamnagar Airport",Jamnagar,IN,22.46560,70.01310
+IXJ,VIJU,"Jammu Airport",Jammu,IN,32.68920,74.83750
+JRH,VEJT,"Jorhat Airport",Jorhat,IN,26.73170,94.17560
+JDH,VIJO,"Jodhpur Airport",Jodhpur,IN,26.25110,73.04890
+CDP,VOCP,"Kadapa Airport",Kadapa,IN,14.50830,78.77500
+KNU,VIKA,"Kanpur Airport",Kanpur,IN,26.40420,80.41030
+IXH,VEKR,"Kailashahar Airport",Kailashahar,IN,24.31670,92.00000
+IXQ,VEKO,"Kamalpur Airport",Kamalpur,IN,24.13330,91.81670
+KMT,VIKG,"Kempty Airport",Kempty,IN,30.48330,78.03330
+IXY,VADN,"Kandla Airport",Kandla,IN,22.99890,70.10030
+KUU,VIKU,"Kullu Manali Airport",Kullu,IN,31.87610,77.15580
+KTU,VIKO,"Kota Airport",Kota,IN,25.15940,75.84500
+IXK,VAKE,"Keshod Airport",Keshod,IN,21.31670,70.26670
+HJR,VAKJ,"Khajuraho Airport",Khajuraho,IN,24.81720,79.91890
+IXN,VEKC,"Khowai Airport",Khowai,IN,24.08330,91.60000
+LKO,VILK,"Lucknow Airport",Lucknow,IN,26.76080,80.88920
+LUH,VILD,"Ludhiana Airport",Ludhiana,IN,30.85420,75.95360
+MAA,VOMM,"Chennai International Airport",Chennai,IN,12.99440,80.18060
+IXM,VOMD,"Madurai Airport",Madurai,IN,9.83440,78.09330
+LDA,VEML,"Malda Airport",Malda,IN,25.02190,88.13610
+IXE,VOML,"Mangalore Airport",Mangalore,IN,12.96110,74.89000
+MOH,VEMH,"Mohanbari Airport",Dibrugarh,IN,27.48390,95.01560
+MYQ,VOMY,"Mysore Airport",Mysore,IN,12.22810,76.65690
+NAG,VANP,"Nagpur Airport",Nagpur,IN,21.09220,79.04720
+NDC,VAND,"Nanded Airport",Nanded,IN,19.18330,77.31670
+ISK,VAOZ,"Nasik Airport",Nasik,IN,19.96580,73.80580
+NVY,VONV,"Neyveli Airport",Neyveli,IN,11.62170,79.52580
+IXI,VEPI,"North Lakhimpur Airport",Lilabari,IN,27.29170,94.10000
+PGH,VIPT,"Pantnagar Airport",Pantnagar,IN,29.03330,79.46670
+IXT,VEPG,"Pasighat Airport",Pasighat,IN,28.06670,95.33330
+PAT,VEPT,"Patna Airport",Patna,IN,25.59140,85.08810
+PBD,VAPR,"Porbandar Airport",Porbandar,IN,21.64830,69.65690
+IXZ,VOPB,"Port Blair Airport",Port Blair,IN,11.64140,92.72970
+PNY,VOPC,"Pondicherry Airport",Pondicherry,IN,11.96670,79.81670
+PNQ,VAPO,"Pune Airport",Pune,IN,18.58220,73.91970
+PUT,VAPU,"Puttaparthi Airport",Puttaparthi,IN,14.15000,77.81670
+RPR,VARP,"Raipur Airport",Raipur,IN,21.18030,81.73890
+RJA,VORY,"Rajahmundry Airport",Rajahmundry,IN,17.10860,81.81830
+RAJ,VARK,"Rajkot Airport",Rajkot,IN,22.30920,70.77920
+RMD,VORM,"Ramnad Airport",Ramnad,IN,9.36670,78.81670
+IXR,VERC,"Ranchi Airport",Ranchi,IN,23.31420,85.32140
+RTC,VARG,"Ratnagiri Airport",Ratnagiri,IN,17.00000,73.33330
+REW,VA1G,"Rewa Airport",Rewa,IN,24.55000,81.31670
+RRK,VE42,"Rourkela Airport",Rourkela,IN,22.25000,84.81670
+RUP,VERU,"Rupsi Airport",Rupsi,IN,26.13330,89.90000
+SXV,VOSX,"Salem Airport",Salem,IN,11.78330,78.06670
+TEZ,VETZ,"Tezpur Airport",Tezpur,IN,26.71670,92.78330
+TJV,VOTJ,"Tanjore Air Force Base",Tanjore,IN,10.71670,79.10000
+TEI,VETJ,"Tezu Airport",Tezu,IN,27.93330,96.13330
+TIR,VOTP,"Tirupati Airport",Tirupati,IN,13.63250,79.54330
+TRZ,VOTR,"Tiruchirapalli Civil Airport Airport",Tiruchirapalli,IN,10.76530,78.70970
+TRV,VOTV,"Trivandrum International Airport",Trivandrum,IN,8.48220,76.92000
+TNI,VOTX,"Satna Airport",Satna,IN,24.56670,80.85000
+UDR,VAUD,"Udaipur Airport",Udaipur,IN,24.61770,73.89610
+BDQ,VABO,"Vadodara Airport",Vadodara,IN,22.33610,73.22640
+VNS,VIBN,"Varanasi Airport",Varanasi,IN,25.45220,82.85940
+VGA,VOBZ,"Vijayawada Airport",Vijayawada,IN,16.53000,80.79690
+VTZ,VEVZ,"Visakhapatnam Airport",Visakhapatnam,IN,17.72110,83.22470
+WGC,VOWA,"Warangal Airport",Warangal,IN,17.91670,79.58330
+ZER,VEZO,"Zero Airport",Zero,IN,27.58330,93.83330
