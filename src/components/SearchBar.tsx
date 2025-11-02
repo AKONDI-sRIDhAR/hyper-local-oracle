@@ -17,14 +17,17 @@ const SearchBar = ({ value, onChange, onSearch, loading = false }: SearchBarProp
   const [showSuggestions, setShowSuggestions] = useState(false);
 
   useEffect(() => {
-    if (value.length >= 2) {
-      const results = getLocationSuggestions(value);
-      setSuggestions(results);
-      setShowSuggestions(results.length > 0);
-    } else {
-      setSuggestions([]);
-      setShowSuggestions(false);
-    }
+    const fetchSuggestions = async () => {
+      if (value.length >= 2) {
+        const results = await getLocationSuggestions(value);
+        setSuggestions(results);
+        setShowSuggestions(results.length > 0);
+      } else {
+        setSuggestions([]);
+        setShowSuggestions(false);
+      }
+    };
+    fetchSuggestions();
   }, [value]);
 
   const handleKeyPress = (e: React.KeyboardEvent) => {

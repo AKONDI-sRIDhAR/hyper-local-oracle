@@ -12,7 +12,8 @@ const WeatherBackground = ({ condition, isNight = false }: WeatherBackgroundProp
 
   useEffect(() => {
     if (condition === "rainy" || condition === "stormy") {
-      const drops = Array.from({ length: 100 }, (_, i) => ({
+      const dropCount = condition === "rainy" ? 300 : 150;
+      const drops = Array.from({ length: dropCount }, (_, i) => ({
         id: i,
         left: Math.random() * 100,
         delay: Math.random() * 2
@@ -185,16 +186,17 @@ const WeatherBackground = ({ condition, isNight = false }: WeatherBackgroundProp
           {raindrops.map((drop) => (
             <motion.div
               key={drop.id}
-              className="absolute w-0.5 h-8 bg-gradient-to-b from-white/60 to-transparent"
+              className="absolute w-0.5 h-8 bg-gradient-to-b from-white/70 to-transparent"
               style={{
                 left: `${drop.left}%`,
                 top: "-10%",
               }}
               animate={{
                 y: ["0vh", "110vh"],
+                x: [`${drop.left}%`, `${drop.left + (Math.random() - 0.5) * 10}%`],
               }}
               transition={{
-                duration: 1,
+                duration: condition === "rainy" ? 0.5 : 0.4,
                 repeat: Infinity,
                 ease: "linear",
                 delay: drop.delay,

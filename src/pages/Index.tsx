@@ -27,6 +27,14 @@ const Index = () => {
     setCity(searchQuery);
   };
 
+  if (error) {
+    toast({
+      title: "Error fetching weather",
+      description: error.message || "Unable to fetch weather data. Please try again.",
+      variant: "destructive",
+    });
+  }
+
   const handleLocationClick = () => {
     setSearchQuery("");
     setCity("");
@@ -45,7 +53,7 @@ const Index = () => {
         condition={weatherCondition} 
         isNight={false}
         temperature={weatherData?.temperature}
-        message={""}
+        message={weatherData?.personalityMessage || ""}
       />
       
       <div className="relative z-10 container mx-auto px-4 py-12">
@@ -93,7 +101,10 @@ const Index = () => {
         {weatherData && (
           <div className="max-w-2xl mx-auto space-y-6">
             <WeatherCard {...weatherData} />
-            <WeatherChart hourlyData={[]} timezone={""} />
+            <WeatherChart 
+              hourlyData={weatherData.hourlyData || { time: [], temperature_2m: [], weather_code: [] }} 
+              timezone={weatherData.timezone || ""} 
+            />
           </div>
         )}
 

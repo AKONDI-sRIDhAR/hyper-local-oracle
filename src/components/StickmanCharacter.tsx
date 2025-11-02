@@ -27,8 +27,8 @@ const StickmanCharacter = ({ condition, isNight = false, temperature = 20, messa
         };
       case "stormy":
         return {
-          body: { y: [0, 3, 0], x: [-2, 2, -2], rotate: [0, 5, -5, 0] },
-          transition: { duration: 0.5, repeat: Infinity as number }
+          body: { y: [0, 5, 0], x: [-5, 5, -5], rotate: [0, 10, -10, 0] },
+          transition: { duration: 0.3, repeat: Infinity as number }
         };
       case "clear":
         if (isNight) {
