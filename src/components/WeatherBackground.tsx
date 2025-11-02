@@ -12,7 +12,7 @@ const WeatherBackground = ({ condition, isNight = false }: WeatherBackgroundProp
 
   useEffect(() => {
     if (condition === "rainy" || condition === "stormy") {
-      const dropCount = condition === "rainy" ? 300 : 150;
+      const dropCount = condition === "rainy" ? 50 : 30;
       const drops = Array.from({ length: dropCount }, (_, i) => ({
         id: i,
         left: Math.random() * 100,
@@ -24,11 +24,11 @@ const WeatherBackground = ({ condition, isNight = false }: WeatherBackgroundProp
 
   useEffect(() => {
     if (condition === "clear" && !isNight) {
-      const birdCount = Array.from({ length: 5 }, (_, i) => ({
+      const birdCount = Array.from({ length: 2 }, (_, i) => ({
         id: i,
         top: 10 + Math.random() * 30,
         delay: Math.random() * 5,
-        duration: 15 + Math.random() * 10
+        duration: 20 + Math.random() * 10
       }));
       setBirds(birdCount);
     }
@@ -193,10 +193,10 @@ const WeatherBackground = ({ condition, isNight = false }: WeatherBackgroundProp
               }}
               animate={{
                 y: ["0vh", "110vh"],
-                x: [`${drop.left}%`, `${drop.left + (Math.random() - 0.5) * 10}%`],
+                x: [`${drop.left}%`, `${drop.left + (Math.random() - 0.5) * 5}%`],
               }}
               transition={{
-                duration: condition === "rainy" ? 0.5 : 0.4,
+                duration: condition === "rainy" ? 1 : 0.8,
                 repeat: Infinity,
                 ease: "linear",
                 delay: drop.delay,

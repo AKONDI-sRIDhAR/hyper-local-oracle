@@ -1,11 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
 import WeatherBackground from "@/components/WeatherBackground";
 import SearchBar from "@/components/SearchBar";
 import WeatherCard from "@/components/WeatherCard";
 import WeatherChart from "@/components/WeatherChart";
-import StickmanCharacter from "@/components/StickmanCharacter";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
 import { useWeather } from "@/hooks/useWeather";
@@ -27,13 +26,15 @@ const Index = () => {
     setCity(searchQuery);
   };
 
-  if (error) {
-    toast({
-      title: "Error fetching weather",
-      description: error.message || "Unable to fetch weather data. Please try again.",
-      variant: "destructive",
-    });
-  }
+  useEffect(() => {
+    if (error) {
+      toast({
+        title: "Error fetching weather",
+        description: error.message || "Unable to fetch weather data. Please try again.",
+        variant: "destructive",
+      });
+    }
+  }, [error, toast]);
 
   const handleLocationClick = () => {
     setSearchQuery("");
@@ -49,12 +50,6 @@ const Index = () => {
   return (
     <div className="min-h-screen relative">
       <WeatherBackground condition={weatherCondition} isNight={false} />
-      <StickmanCharacter 
-        condition={weatherCondition} 
-        isNight={false}
-        temperature={weatherData?.temperature}
-        message={weatherData?.personalityMessage || ""}
-      />
       
       <div className="relative z-10 container mx-auto px-4 py-12">
         {/* Header */}
