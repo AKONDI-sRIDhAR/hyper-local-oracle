@@ -12,26 +12,20 @@ const WeatherBackground = ({ condition, isNight = false }: WeatherBackgroundProp
 
   useEffect(() => {
     if (condition === "rainy" || condition === "stormy") {
-      const dropCount = condition === "rainy" ? 50 : 30;
+      const dropCount = 20;
       const drops = Array.from({ length: dropCount }, (_, i) => ({
         id: i,
         left: Math.random() * 100,
-        delay: Math.random() * 2
+        delay: Math.random() * 2,
       }));
       setRaindrops(drops);
+    } else {
+      setRaindrops([]);
     }
   }, [condition]);
 
   useEffect(() => {
-    if (condition === "clear" && !isNight) {
-      const birdCount = Array.from({ length: 2 }, (_, i) => ({
-        id: i,
-        top: 10 + Math.random() * 30,
-        delay: Math.random() * 5,
-        duration: 20 + Math.random() * 10
-      }));
-      setBirds(birdCount);
-    }
+    setBirds([]);
   }, [condition, isNight]);
 
   const getGradient = () => {

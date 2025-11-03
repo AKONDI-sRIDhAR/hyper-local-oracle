@@ -1,70 +1,31 @@
-// src/hooks/useWeather.ts
 import { useQuery } from '@tanstack/react-query';
-import { supabase } from '@/integrations/supabase/client';
 
-interface WeatherResponse {
-  parsed: {
-    location: string;
-    intent: string;
-    timeframe: string;
-    personality_message?: string;
-  };
-  weather: {
-    current: {
-      temperature_2m: number;
-      relative_humidity_2m: number;
-      apparent_temperature: number;
-      weather_code: number;
-      wind_speed_10m: number;
-    };
-    hourly: {
-      time: string[];
-      temperature_2m: number[];
-      weather_code: number[];
-      relative_humidity_2m: number[];
-    };
-    location: {
-      name: string;
-      country: string;
-      timezone: string;
-    };
-  };
-  personalityMessage: string | null;
-}
-
-const getWeatherCondition = (code: number): string => {
-  if (code === 0) return 'Clear';
-  if (code <= 3) return 'Cloudy';
-  if (code <= 67 || code === 80 || code === 81) return 'Rain';
-  if (code >= 95) return 'Thunderstorm';
-  return 'Cloudy';
-};
+const API_KEY = import.meta.env.VITE_OPENWEATHERMAP_API_KEY;
 
 export const useWeather = (city: string) => {
   return useQuery({
     queryKey: ['weather', city],
     queryFn: async () => {
-      const { data, error } = await supabase.functions.invoke('weather-search', {
-        body: { query: city }
-      });
-
-      if (error) throw error;
-      if (!data?.weather) throw new Error('Weather data not found');
-
-      const response = data as WeatherResponse;
+      const response = await fetch(
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
+      );
+      
+      if (!response.ok) {
+        throw new Error('Location not found');
+      }
+      
+      const data = await response.json();
       
       return {
-        temperature: response.weather.current.temperature_2m,
-        condition: getWeatherCondition(response.weather.current.weather_code),
-        humidity: response.weather.current.relative_humidity_2m,
-        windSpeed: response.weather.current.wind_speed_10m,
-        feelsLike: response.weather.current.apparent_temperature,
-        location: `${response.weather.location.name}, ${response.weather.location.country}`,
-        personalityMessage: response.personalityMessage,
-        hourlyData: response.weather.hourly,
-        timezone: response.weather.location.timezone,
+        temperature: data.main.temp,
+        condition: data.weather[0].main,
+        humidity: data.main.humidity,
+        windSpeed: data.wind.speed,
+        feelsLike: data.main.feels_like,
+        location: `${data.name}, ${data.sys.country}`,
       };
     },
-    enabled: !!city,
+    enabled: !!city && city.length > 0,
+    retry: 1,
   });
 };

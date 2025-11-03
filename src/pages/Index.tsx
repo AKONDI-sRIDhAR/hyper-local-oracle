@@ -1,44 +1,22 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { MapPin } from "lucide-react";
+import { Search } from "lucide-react";
 import WeatherBackground from "@/components/WeatherBackground";
-import SearchBar from "@/components/SearchBar";
 import WeatherCard from "@/components/WeatherCard";
-import WeatherChart from "@/components/WeatherChart";
-import { useToast } from "@/hooks/use-toast";
+import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useWeather } from "@/hooks/useWeather";
 
 const Index = () => {
-  const [searchQuery, setSearchQuery] = useState("");
   const [city, setCity] = useState("");
+  const [inputValue, setInputValue] = useState("");
   const { data: weatherData, isLoading, error } = useWeather(city);
-  const { toast } = useToast();
 
-  const handleSearch = () => {
-    if (!searchQuery.trim()) {
-      toast({
-        title: "Please enter a location",
-        variant: "destructive",
-      });
-      return;
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (inputValue.trim()) {
+      setCity(inputValue.trim());
     }
-    setCity(searchQuery);
-  };
-
-  useEffect(() => {
-    if (error) {
-      toast({
-        title: "Error fetching weather",
-        description: error.message || "Unable to fetch weather data. Please try again.",
-        variant: "destructive",
-      });
-    }
-  }, [error, toast]);
-
-  const handleLocationClick = () => {
-    setSearchQuery("");
-    setCity("");
   };
 
   const weatherCondition = weatherData?.condition.toLowerCase().includes("rain")
@@ -48,87 +26,71 @@ const Index = () => {
     : "clear";
 
   return (
-    <div className="min-h-screen relative">
+    <div className="min-h-screen relative flex items-center justify-center">
       <WeatherBackground condition={weatherCondition} isNight={false} />
       
-      <div className="relative z-10 container mx-auto px-4 py-12">
-        {/* Header */}
+      <div className="relative z-10 w-full max-w-md px-6">
         <motion.div
-          initial={{ opacity: 0, y: -30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-12"
+          transition={{ duration: 0.5 }}
+          className="space-y-8"
         >
-          <h1 className="text-6xl font-light text-white mb-4 drop-shadow-lg">
-            Weather
-          </h1>
-          <p className="text-xl text-white/80 font-light">
-            AI-powered hyper-local forecasting
-          </p>
-        </motion.div>
+          {/* Header */}
+          <div className="text-center">
+            <h1 className="text-5xl font-light text-white mb-2">Weather</h1>
+            <p className="text-white/60 text-sm">Simple, clean, minimal</p>
+          </div>
 
-        {/* Search */}
-        <div className="mb-12 relative">
-          <SearchBar
-            value={searchQuery}
-            onChange={setSearchQuery}
-            onSearch={handleSearch}
-            loading={isLoading}
-          />
-          {weatherData && (
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              className="absolute -bottom-16 right-0"
-            >
+          {/* Search */}
+          <form onSubmit={handleSearch} className="space-y-4">
+            <div className="relative">
+              <Input
+                type="text"
+                placeholder="Enter city name..."
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
+                className="w-full bg-white/10 backdrop-blur-xl border-white/20 text-white placeholder:text-white/50 h-12 px-4 rounded-xl"
+                disabled={isLoading}
+              />
               <Button
-                onClick={handleLocationClick}
+                type="submit"
                 size="icon"
-                className="rounded-full bg-white/20 hover:bg-white/30 backdrop-blur-xl border border-white/20 text-white"
+                disabled={isLoading || !inputValue.trim()}
+                className="absolute right-1 top-1 h-10 w-10 rounded-lg bg-white/20 hover:bg-white/30 backdrop-blur-xl border-0"
               >
-                <MapPin className="w-5 h-5" />
+                <Search className="w-4 h-4 text-white" />
               </Button>
+            </div>
+          </form>
+
+          {/* Weather Card */}
+          {weatherData && !error && (
+            <WeatherCard {...weatherData} />
+          )}
+
+          {/* Error */}
+          {error && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="text-center text-white/80 bg-white/10 backdrop-blur-xl rounded-xl p-4 border border-white/20"
+            >
+              <p className="text-sm">{error.message}</p>
             </motion.div>
           )}
-        </div>
 
-        {/* Weather display */}
-        {weatherData && (
-          <div className="max-w-2xl mx-auto space-y-6">
-            <WeatherCard {...weatherData} />
-            <WeatherChart 
-              hourlyData={weatherData.hourlyData || { time: [], temperature_2m: [], weather_code: [] }} 
-              timezone={weatherData.timezone || ""} 
-            />
-          </div>
-        )}
-
-        {error && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
-            className="text-center text-white/60 mt-20"
-          >
-            <p className="text-lg">
-              {error.message}
-            </p>
-          </motion.div>
-        )}
-
-        {/* Initial state */}
-        {!weatherData && !isLoading && !error && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
-            className="text-center text-white/60 mt-20"
-          >
-            <p className="text-lg">
-              Search for any location to see detailed weather information
-            </p>
-          </motion.div>
-        )}
+          {/* Loading */}
+          {isLoading && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="text-center text-white/80"
+            >
+              <p className="text-sm">Loading...</p>
+            </motion.div>
+          )}
+        </motion.div>
       </div>
     </div>
   );
